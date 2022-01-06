@@ -15,6 +15,7 @@ body{
 .containerGlobal{
   position: fixed;
   width: 100%;
+  background-color: white;
 }
 .navbar{
   border-bottom: solid 1px lightgrey;
