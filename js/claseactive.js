@@ -1,7 +1,14 @@
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
-    if (scrolled>253){
-        CambioClaseProyectos();
+    console.log(scrolled)
+    if (scrolled<400){
+        CambioClaseInicio()
+    }
+    if (scrolled>400 && scrolled<886){
+        CambioClaseSobreMi()
+    }
+    if (scrolled>886){
+        CambioClaseConocimientos()
     }
   });
  

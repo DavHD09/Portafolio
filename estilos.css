@@ -2,32 +2,38 @@
 
 body{
   font-family: 'Cousine', monospace !important;
+  margin: 0%;
+  width: 100%;
 }
 
-#logo{
+/* #logo{
     position: absolute;
     width: 220px;
     height: 43px;
     background: url("img/logo.png");
     border-radius: 410px;
-}
+} */
 
 .containerGlobal{
-  position: fixed;
   width: 100%;
+  position: fixed;
   background-color: white;
+  z-index: 100;
 }
+
+.contenedorInfomacion{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 .navbar{
+  width: 100%;
   border-bottom: solid 1px lightgrey;
-}
-.fa{
-  color: #4D7EFF;
 }
 
 ul{
   margin-left: auto;
 }
-
 
 ul li a{
   margin-left: 20px;
@@ -39,7 +45,105 @@ ul li a{
   font-weight: bold;
 }
 
+/* contenedor del inicio */ 
+#iniciodiv{
+  height: 430px;
+  background: url("img/Fondo.png");
+}
 
+.foto{
+  position: relative;
+  top:90px;
+  text-align: right;
+}
+.info{
+  position: relative;
+  top:160px;
+
+}
+.info h1{
+  color:white;
+  text-align: center;
+}
+#nombre{
+  color:#4D7EFF !important;
+  font-weight: bolder;
+}
+
+/* sobre mi */ 
+#Containersobremi{
+  margin-top: 30px;
+}
+#Containersobremi h1{
+  text-align: center;
+  color:#4D7EFF !important;
+  font-weight: bold;
+}
+#Containersobremi h4{
+  text-align: center;
+}
+
+.carousel{
+  height: 224px;
+  text-align: center;
+
+}
+.card{
+  margin:auto;
+}
+.card img{
+  height: 200px;
+  width: auto;
+}
+.boton{
+  color:#4D7EFF !important;
+}
+.descargar{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#botoncv button{
+  background: #4D7EFF !important;
+  border:0;
+  border-radius: 50px;
+  width: 296px;
+  height: 65px;
+  color:white;
+  font-size: 20px;
+
+}
+/* Comienza la parte de mis conocimientos */
+#ContainerConoc h1{
+  text-align: center;
+  color:#4D7EFF !important;
+  font-weight: bold;
+}
+#ContainerConoc img{
+  height: 153px;
+}
+.prueba{  
+  background: #4D7EFF;
+  width: 160px;
+  height: 216px;
+  padding-top: 30px;
+  margin:auto;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.mongo{
+  float: right;
+}
+.sql{
+  margin-right: 2em;
+}
+.git{
+  margin-left: 40px;
+}
+.node{
+  float:left;
+}
 /* Comienza la parte de los proyectos  */
 .portfolio__grid {
     display: grid;
