@@ -144,6 +144,44 @@ ul li a{
 .node{
   float:left;
 }
+.skills{
+  height: 90px;
+  width: 300px;
+  background: darkgray;
+  border-radius: 10px;
+  background:linear-gradient(to right, rgb(190, 190, 190) 50%, #4D7EFF 50%) no-repeat left / 200%;
+  transition: background-position 0.3s ease;
+}
+.skills:hover{
+  background-position: right;
+  color: black;
+}
+.skills img{
+  margin:10px;
+  height: 70px;
+}
+.skills p{
+  margin-top: 35px;
+  text-align: center;
+}
+.skills i{
+  margin-top: 34px;
+  margin-left: 30px;
+  font-size: 25px;
+  text-align: right;
+}
+.primera{
+  float: right;
+}
+.segunda{
+  margin: auto;
+}
+#filaultima{
+  display:none; 
+}
+#cerrar{
+  display:none;
+}
 /* Comienza la parte de los proyectos  */
 .portfolio__grid {
     display: grid;
