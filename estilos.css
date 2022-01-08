@@ -2,17 +2,8 @@
 
 body{
   font-family: 'Cousine', monospace !important;
-  margin: 0%;
   max-width: 1600px;
 }
-
-/* #logo{
-    position: absolute;
-    width: 220px;
-    height: 43px;
-    background: url("img/logo.png");
-    border-radius: 410px;
-} */
 
 .containerGlobal{
   width: 100%;
@@ -27,7 +18,6 @@ body{
 }
 
 .navbar{
-  width: 100%;
   border-bottom: solid 1px lightgrey;
 }
 
@@ -51,20 +41,20 @@ ul li a{
   background: url("img/Fondo.png");
 }
 
-.foto{
-  position: relative;
+.foto{  
   top:90px;
   text-align: right;
 }
-.info{
-  position: relative;
-  top:160px;
 
+.info{
+  top:160px;
 }
+
 .info h1{
   color:white;
   text-align: center;
 }
+
 #nombre{
   color:#4D7EFF !important;
   font-weight: bolder;
@@ -74,35 +64,41 @@ ul li a{
 #Containersobremi{
   margin-top: 30px;
 }
+
 #Containersobremi h1{
   text-align: center;
   color:#4D7EFF !important;
   font-weight: bold;
 }
+
 #Containersobremi h4{
   text-align: center;
 }
 
 .carousel{
-  height: 224px;
+  height: 220px;
   text-align: center;
-
 }
+
 .card{
   margin:auto;
 }
+
 .card img{
-  height: 200px;
+  height: 180px;
   width: auto;
 }
+
 .boton{
   color:#4D7EFF !important;
 }
+
 .descargar{
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 #botoncv button{
   background: #4D7EFF !important;
   border:0;
@@ -111,17 +107,19 @@ ul li a{
   height: 50px;
   color:white;
   font-size: 20px;
-
 }
+
 /* Comienza la parte de mis conocimientos */
 #ContainerConoc h1{
   text-align: center;
   color:#4D7EFF !important;
   font-weight: bold;
 }
+
 #ContainerConoc img{
   height: 153px;
 }
+
 .prueba{  
   background: #4D7EFF;
   width: 160px;
@@ -132,18 +130,7 @@ ul li a{
   border-radius: 30px;
   margin-bottom: 30px;
 }
-.mongo{
-  float: right;
-}
-.sql{
-  margin-right: 2em;
-}
-.git{
-  margin-left: 40px;
-}
-.node{
-  float:left;
-}
+
 .skills{
   height: 90px;
   width: 300px;
@@ -183,6 +170,7 @@ ul li a{
 #cerrar{
   display:none;
 }
+
 /* Comienza la parte de los proyectos  */
 .portfolio__grid {
     display: grid;
@@ -254,43 +242,92 @@ ul li a{
     text-align: center;
     margin-bottom: 30px;
   }
- 
-
 
   @media (max-width: 1025px) {
+    .foto img{
+      height: 200px;
+      width: 200px;
+    }
+
+    .foto {
+      margin-top: 60px;
+    }
+
     .skills{
       width: 220px;
     }
+
     .skills img{
       height: 60px;
     }
+
     .skills i{
       margin-left: 20px;
     }
+
     .primera{
       float:none;
       margin: auto;
       margin-bottom: 10px;
     }
+
     .segunda{
       float:none;
       padding: 0;
       margin-bottom: 10px;
     }
+
     .tercera{
       float: none;
       margin:auto;
       margin-bottom: 10px;
     }
   }
+
   @media (max-width: 767px) {
 
-  
-    .services__grid,
-    .portfolio__grid {
+    .services__grid, .portfolio__grid {
       grid-template-columns: 1fr;
       gap: 20px;
     }
+    
+    .carousel {
+      margin-bottom: 30px;
+    }
+
+    .info h1{
+      font-size: 30px;
+    }  
+  }
+
+  @media (max-width: 576px) {
+    .foto {
+      top: 75px;
+      margin: 0px;
+      text-align: center;
+    }
+    .foto img{
+      height: 160px;
+      width: 160px;
+    }
   
-  
+    .info{
+      top:110px;
+      margin:auto;
+      width: 100%;
+    }
+    .info h1{
+      font-size: 25px;
+    }
+    .filainicio{
+      margin:0px !important;
+    }
+    #Containersobremi h4{
+      font-size: 20px !important;
+      text-align: justify ;
+    }
+    #subtitulos{
+      text-align: center !important;
+      margin-top: 10px;
+    }
   }
