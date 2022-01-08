@@ -7,10 +7,10 @@ window.addEventListener('scroll', () => {
     if (scrolled > 400 && scrolled < 886) {
         CambioClaseSobreMi()
     }
-    if (scrolled > 886 && scrolled <1310) {
+    if (scrolled > 886 && scrolled <1265) {
         CambioClaseConocimientos()
     }
-    if (scrolled > 1310) {
+    if (scrolled > 1265) {
         CambioClaseProyectos()
     }
 });
