@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>DavHD</title>
   <script src="js/claseactive.js"></script>
   <script src="js/ConocimientosCompletos.js"></script>
@@ -18,13 +16,13 @@
 
 <body>
 
-  <div class="containerGlobal">
+  <div class="containerNavBar">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> DavHD </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars" aria-hidden="true"></i>
+          <i class="fa fa-bars" id="Collapse-logo" aria-hidden="true"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
@@ -128,7 +126,7 @@
 
     <div class="row primerafila">
       <div class="col-md">
-        <div class="skills primera">
+        <div class="skills skill-item-primero">
           <div class="row">
             <div class="col-4">
               <img src="img/Newlogohtml.png">
@@ -143,7 +141,7 @@
         </div>
       </div>
       <div class="col-md">
-        <div class="skills segunda">
+        <div class="skills skill-item-segunda">
           <div class="row">
             <div class="col-4">
               <img src="img/newlogoCss.png">
@@ -176,7 +174,7 @@
 
     <div class="row">
       <div class="col-md ">
-        <div class="skills primera">
+        <div class="skills skill-item-primero">
           <div class="row">
             <div class="col-4">
               <img src="img/newlogoReact.png">
@@ -191,7 +189,7 @@
         </div>
       </div>
       <div class="col-md">
-        <div class="skills segunda">
+        <div class="skills skill-item-segunda">
           <div class="row">
             <div class="col-4">
               <img src="img/newlogoBootstrap.png">
@@ -222,10 +220,10 @@
       </div>
     </div>
 
-    <div id="filaultima">
+    <div id="tra-fila-skills">
       <div class="row">
         <div class="col-md ">
-          <div class="skills primera">
+          <div class="skills skill-item-primero">
             <div class="row">
               <div class="col-4">
                 <img src="img/newlogogithub.png">
@@ -240,7 +238,7 @@
           </div>
         </div>
         <div class="col-md">
-          <div class="skills segunda">
+          <div class="skills skill-item-segunda">
             <div class="row">
               <div class="col-4">
                 <img src="img/newlogosqlite.png">
@@ -273,11 +271,11 @@
     </div>
 
     <section class="descargar" id="botoncv">
-      <button onclick="abrirmenu()" id="ampliar"> Mostrar más </button>
+      <button onclick="abrirmenu()" id="btn-abrir"> Mostrar más </button>
     </section>
 
     <section class="descargar" id="botoncv">
-      <button onclick="cerrarmenu()" id="cerrar"> Mostrar menos </button>
+      <button onclick="cerrarmenu()" id="btn-cerrar"> Mostrar menos </button>
     </section>
 
     <section id="Proyectos">
@@ -369,8 +367,5 @@
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </html>

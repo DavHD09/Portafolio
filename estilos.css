@@ -5,7 +5,7 @@ body{
   max-width: 1600px;
 }
 
-.containerGlobal{
+.containerNavBar{
   width: 100%;
   position: fixed;
   background-color: white;
@@ -19,6 +19,10 @@ body{
 
 .navbar{
   border-bottom: solid 1px lightgrey;
+}
+
+#Collapse-logo{
+  color:#4D7EFF;
 }
 
 ul{
@@ -120,17 +124,6 @@ ul li a{
   height: 153px;
 }
 
-.prueba{  
-  background: #4D7EFF;
-  width: 160px;
-  height: 216px;
-  padding-top: 30px;
-  margin:auto;
-  text-align: center;
-  border-radius: 30px;
-  margin-bottom: 80px;
-}
-
 .skills{
   height: 90px;
   width: 300px;
@@ -139,35 +132,43 @@ ul li a{
   background:linear-gradient(to right, rgb(190, 190, 190) 50%, #4D7EFF 50%) no-repeat left / 200%;
   transition: background-position 0.3s ease;
 }
+
 .skills:hover{
   background-position: right;
   color: black;
 }
+
 .skills img{
   margin:10px;
   height: 70px;
 }
+
 .skills p{
   margin-top: 35px;
   text-align: center;
 }
+
 .skills i{
   margin-top: 34px;
   margin-left: 30px;
   font-size: 25px;
   text-align: right;
 }
-.primera{
+
+.skill-item-primero{
   float: right;
   margin-bottom: 10px;
 }
-.segunda{
+
+.skill-item-segunda{
   margin: auto;
 }
-#filaultima{
+
+#tra-fila-skills{
   display:none; 
 }
-#cerrar{
+
+#btn-cerrar{
   display:none;
 }
 
@@ -183,187 +184,194 @@ ul li a{
     overflow: hidden;  /* recorte */
     font-size: 14px;
     border-radius: 10px;
-  }
+}
   
-  .portfolio__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: all 1s;
-    border-radius: 10px;
-    max-height: 190px;
-  }
+.portfolio__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 1s;
+  border-radius: 10px;
+  max-height: 190px;
+}
   
-  .portfolio__description {
-    padding: 50px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    top: 300px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    border-radius: 10px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+.portfolio__description {
+  padding: 50px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 300px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
   
-  .portfolio__item:hover .portfolio__description {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s;
-    border-radius: 10px;
-    transform: translateY(-300px);
-  }
+.portfolio__item:hover .portfolio__description {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+  border-radius: 10px;
+  transform: translateY(-300px);
+}
   
-  .portfolio__item:hover .portfolio__img {
-    transition: all 1s;
-    border-radius: 10px;
-    transform: scale(1.3);
-  }
+.portfolio__item:hover .portfolio__img {
+  transition: all 1s;
+  border-radius: 10px;
+  transform: scale(1.3);
+}
   
-  .portfolio__description--title {
-    text-align: center;
-    color:white;
-  }
+.portfolio__description--title {
+  text-align: center;
+  color:white;
+}
   
-  .portfolio__description--text {
-    color: white;
-    text-align: center;
-    margin: 20px 0;
+.portfolio__description--text {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#Proyectos h1{
+  color: #4D7EFF;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Comienza la parte de los contactos */
+#Contactos{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#Contactos h1{
+  color: #4D7EFF;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+  
+#Contactos img{
+  height: 115px;
+}
+
+.card-contactos{
+  text-align: center;
+  margin:auto;
+}
+
+/* Footer */
+
+.footer{
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.9) ;
+  text-align: center;
+}
+
+.footer h6{
+  padding-top: 10px !important;
+  color: white;
+}
+
+/* Responsive design  */
+@media (max-width: 1025px) {
+  .foto img{
+    height: 200px;
+    width: 200px;
   }
 
-  #Proyectos h1{
-    color: #4D7EFF;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
+  .foto{
+    margin-top: 60px;
   }
 
-  /* Comienza la parte de los contactos */
-  #Contactos{
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-  #Contactos h1{
-    color: #4D7EFF;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  #Contactos img{
-    height: 115px;
+  .skills{
+    width: 220px;
   }
 
-  .card-contactos{
-    text-align: center;
+  .skills img{
+    height: 60px;
+  }
+
+  .skills i{
+    margin-left: 20px;
+  }
+
+  .primera{
+    float:none;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .segunda{
+    float:none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .tercera{
+    float: none;
     margin:auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .services__grid, .portfolio__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+    
+  .carousel {
+    margin-bottom: 30px;
   }
 
-  /* Footer */
+  .info h1{
+    font-size: 30px;
+  }  
+}
 
-  .footer{
-    width: 100%;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.9) ;
+@media (max-width: 576px) {
+
+  .foto {
+    top: 75px;
+    margin: 0px;
     text-align: center;
   }
 
-  .footer h6{
-    padding-top: 10px !important;
-    color: white;
+  .foto img{
+    height: 160px;
+    width: 160px;
   }
-
-  /* Responsive design  */
-
-  @media (max-width: 1025px) {
-    .foto img{
-      height: 200px;
-      width: 200px;
-    }
-
-    .foto {
-      margin-top: 60px;
-    }
-
-    .skills{
-      width: 220px;
-    }
-
-    .skills img{
-      height: 60px;
-    }
-
-    .skills i{
-      margin-left: 20px;
-    }
-
-    .primera{
-      float:none;
-      margin: auto;
-      margin-bottom: 10px;
-    }
-
-    .segunda{
-      float:none;
-      padding: 0;
-      margin-bottom: 10px;
-    }
-
-    .tercera{
-      float: none;
-      margin:auto;
-      margin-bottom: 10px;
-    }
-  }
-
-  @media (max-width: 767px) {
-
-    .services__grid, .portfolio__grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-    
-    .carousel {
-      margin-bottom: 30px;
-    }
-
-    .info h1{
-      font-size: 30px;
-    }  
-  }
-
-  @media (max-width: 576px) {
-    .foto {
-      top: 75px;
-      margin: 0px;
-      text-align: center;
-    }
-    .foto img{
-      height: 160px;
-      width: 160px;
-    }
   
-    .info{
-      top:110px;
-      margin:auto;
-      width: 100%;
-    }
-    .info h1{
-      font-size: 25px;
-    }
-    .filainicio{
-      margin:0px !important;
-    }
-    #Containersobremi h4{
-      font-size: 20px !important;
-      text-align: justify ;
-    }
-    #subtitulos{
-      text-align: center !important;
-      margin-top: 10px;
-    }
+  .info{
+    top:110px;
+    margin:auto;
+    width: 100%;
   }
+
+  .info h1{
+    font-size: 25px;
+  }
+
+  .filainicio{
+    margin:0px !important;
+  }
+    
+  #Containersobremi h4{
+    font-size: 20px !important;
+    text-align: justify ;
+  }
+
+  #subtitulos{
+    text-align: center !important;
+    margin-top: 10px;
+  }
+}
