@@ -96,7 +96,7 @@ ul li a{
 .descargar{
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 #botoncv button{
@@ -128,7 +128,7 @@ ul li a{
   margin:auto;
   text-align: center;
   border-radius: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .skills{
@@ -242,6 +242,42 @@ ul li a{
     text-align: center;
     margin-bottom: 30px;
   }
+
+  /* Comienza la parte de los contactos */
+  #Contactos{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #Contactos h1{
+    color: #4D7EFF;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #Contactos img{
+    height: 115px;
+  }
+
+  .card-contactos{
+    text-align: center;
+    margin:auto;
+  }
+
+  /* Footer */
+
+  .footer{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.9) ;
+    text-align: center;
+  }
+
+  .footer h6{
+    padding-top: 10px !important;
+    color: white;
+  }
+
+  /* Responsive design  */
 
   @media (max-width: 1025px) {
     .foto img{
