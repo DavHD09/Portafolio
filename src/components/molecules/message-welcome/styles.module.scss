@@ -1,0 +1,33 @@
+@import "../../../assets/styles/variables.style.module.scss";
+.container {
+    &_title {
+        color: $white;
+        font-size: 40px;
+        font-weight: bold;
+
+        &-blue {
+            color: $blue;
+            font-size: 40px;
+            font-weight: 100;
+        }
+    }
+
+    &_subtitle {
+        color: $blue;
+        font-size: 18px;
+    }
+}
+
+.container > * h1 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.container > * h1:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.divider {
+    color: $white;
+    height: 20px;
+}
