@@ -3,7 +3,11 @@ import styles from "./styles.module.scss";
 import { Grid } from "@mui/material";
 import { KeyboardDoubleArrowDown } from "@mui/icons-material";
 
-import { ContainerPhoto, MessageWelcome } from "../../molecules";
+import {
+    ButtonsNavegation,
+    ContainerPhoto,
+    MessageWelcome,
+} from "../../molecules";
 
 export const MainView = (): JSX.Element => {
     return (
@@ -14,9 +18,12 @@ export const MainView = (): JSX.Element => {
             <Grid item md={7} xs={12} className={styles.container_photo}>
                 <ContainerPhoto />
             </Grid>
-            <Grid item xs={12} className={styles[`container_icon-down`]}>
+            <aside className={styles.container_buttons}>
+                <ButtonsNavegation />
+            </aside>
+            <footer className={styles[`container_icon-down`]}>
                 <KeyboardDoubleArrowDown />
-            </Grid>
+            </footer>
         </Grid>
     );
 };

@@ -2,19 +2,19 @@
 .container {
     &_title {
         color: $white;
-        font-size: 40px;
+        font-size: 3vw;
         font-weight: bold;
 
         &-blue {
             color: $blue;
-            font-size: 40px;
+            font-size: 3vw;
             font-weight: 100;
         }
     }
 
     &_subtitle {
         color: $blue;
-        font-size: 18px;
+        font-size: 1.2vw;
     }
 }
 

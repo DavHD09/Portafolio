@@ -1,0 +1,21 @@
+.container_buttons_nav {
+    position: relative;
+    right: -100px;
+    transition: 300ms;
+
+    &:hover {
+        right: 0px;
+        transition: 300ms;
+    }
+
+    &-works {
+        position: relative;
+        right: -100px;
+        transition: 300ms;
+
+        &:hover {
+            right: -20px;
+            transition: 300ms;
+        }
+    }
+}
