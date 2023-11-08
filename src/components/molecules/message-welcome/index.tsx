@@ -24,7 +24,7 @@ export const MessageWelcome = (): JSX.Element => {
                     con más de 2 años de experiencia.
                 </p>
             </section>
-            <section>
+            <section className={styles[`container_btn-download`]}>
                 <a href={DavHD_CV} download={"DavHD_CV.pdf"}>
                     <ButtomCustom
                         icon={<CloudDownloadIcon />}

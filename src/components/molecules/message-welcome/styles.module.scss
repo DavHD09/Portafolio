@@ -31,3 +31,56 @@
     color: $white;
     height: 20px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        text-align: center;
+        &_title {
+            font-size: 30px;
+
+            &-blue {
+                font-size: 30px;
+            }
+        }
+
+        &_subtitle {
+            font-size: 23px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        &_title {
+            font-size: 30px;
+
+            &-blue {
+                font-size: 30px;
+            }
+        }
+
+        &_subtitle {
+            font-size: 23px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        &_title {
+            font-size: 25px;
+
+            &-blue {
+                font-size: 25px;
+            }
+        }
+
+        &_subtitle {
+            font-size: 18px;
+        }
+
+        &_btn-download {
+            margin: 10px 0 70px 0;
+        }
+    }
+}

@@ -12,16 +12,18 @@ import {
 export const MainView = (): JSX.Element => {
     return (
         <Grid container className={styles.container}>
-            <Grid item md={5} xs={12} className={styles.container_messages}>
+            <Grid item lg={6} xs={12} className={styles.container_messages}>
                 <MessageWelcome />
             </Grid>
-            <Grid item md={7} xs={12} className={styles.container_photo}>
+            <Grid item lg={6} xs={12} className={styles.container_photo}>
                 <ContainerPhoto />
             </Grid>
             <aside className={styles.container_buttons}>
                 <ButtonsNavegation />
             </aside>
-            <footer className={styles[`container_icon-down`]}>
+            <footer
+                className={`${styles[`container_icon-down`]} footer-container`}
+            >
                 <KeyboardDoubleArrowDown />
             </footer>
         </Grid>

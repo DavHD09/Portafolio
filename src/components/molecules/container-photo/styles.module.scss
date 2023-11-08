@@ -2,14 +2,43 @@
 
 .container {
     align-items: center;
-    background: linear-gradient(-50deg, rgba(136, 36, 127, 1), rgba(136, 36, 127, 0));
+    background: linear-gradient(
+        -50deg,
+        rgba(136, 36, 127, 1),
+        rgba(136, 36, 127, 0)
+    );
     border-radius: 100%;
     display: flex;
-    height: 550px;
+    height: 34vw;
     justify-content: center;
-    width: 550px;
+    width: 34vw;
 
-    &_photo{
+    &_photo {
         transform: scale(0.9);
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        margin: 20px;
+        height: 450px;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        height: 400px;
+        width: 400px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 20px;
+        height: 300px;
+        width: 300px;
     }
 }

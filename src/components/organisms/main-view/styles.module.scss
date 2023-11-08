@@ -4,12 +4,13 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 100% !important;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    padding-left: 96px;
+    padding: 0 5%;
     position: relative;
     overflow-x: hidden;
 
@@ -36,7 +37,38 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        width: calc(100% - 192px);
+        width: calc(100% - 10%);
         color: $white;
+        animation: slideIn 1.5s ease-in-out infinite;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        display: grid;
+        flex-direction: column-reverse !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        align-items: center;
+        
+        &_messages {
+            display: inline;
+        }
     }
 }
