@@ -1,0 +1,24 @@
+@import "../../../assets/styles/variables.style.module.scss";
+
+.container {
+    padding: 0 5%;
+
+    &_title {
+        text-align: center;
+
+        & > h1 {
+            font-size: 2.2vw;
+            color: $white;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        &_title {
+            & > h1 {
+                font-size: 25px !important;
+            }
+        }
+    }
+}

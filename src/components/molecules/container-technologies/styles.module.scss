@@ -1,0 +1,33 @@
+@import "../../../assets/styles/variables.style.module.scss";
+
+.container {
+    & > h2 {
+        color: $blue;
+        font-weight: 200;
+    }
+
+    &_outside {
+        border: 1px solid $white;
+        border-radius: 11px;
+        min-height: 7vw;
+    }
+
+    &_inside {
+        text-align: center;
+        padding: 20px;
+        color: $blue;
+        font-size: 1vw;
+
+        & > * img {
+            transform: scale(0.7);
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        &_inside {
+            font-size: 17px;
+        }
+    }
+}
