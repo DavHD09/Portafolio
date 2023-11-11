@@ -3,4 +3,7 @@
 .container_button {
     background-color: $blue !important;
     text-transform: none !important;
+    min-width: 160px !important;
+    display: flex;
+    justify-content: flex-start !important;
 }

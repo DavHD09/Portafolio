@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variables.style.module.scss';
+
+.container {
+    border: 1px solid $white;
+    border-radius: 5px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-width: 80px;
+    margin: 1%;
+
+    &_img {
+        height: 75%;
+        width: 100%;
+        & > img {
+            height: 14px;
+            width: 14px;
+        }
+    }
+
+    &_name {
+        color: $white;
+        font-weight: bold;
+        font-size: 10px;
+        height: 50%;
+        width: 100%;
+    }
+}

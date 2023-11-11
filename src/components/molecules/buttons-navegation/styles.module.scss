@@ -1,6 +1,6 @@
 .container_buttons_nav {
     position: relative;
-    right: -100px;
+    right: -110px;
     transition: 300ms;
 
     &:hover {
@@ -8,14 +8,8 @@
         transition: 300ms;
     }
 
-    &-works {
-        position: relative;
-        right: -100px;
-        transition: 300ms;
-
-        &:hover {
-            right: -20px;
-            transition: 300ms;
-        }
+    &_icons{
+        height: 20px;
+        width: 20px;
     }
 }

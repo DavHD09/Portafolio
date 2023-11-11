@@ -10,19 +10,25 @@ export const ButtonsNavegation = (): JSX.Element => {
         <Fragment>
             <div className={styles.container_buttons_nav}>
                 <ButtomCustom
-                    icon={<Build style={{ height: "20px", width: "20px" }} />}
-                    name="Herramientas"
+                    icon={
+                        <Build className={styles.container_buttons_nav_icons} />
+                    }
+                    name=" Tecnólogias"
                 />
             </div>
-            <div className={styles[`container_buttons_nav-works`]}>
+            <div className={styles[`container_buttons_nav`]}>
                 <ButtomCustom
-                    icon={<Work style={{ height: "20px", width: "20px" }} />}
-                    name="Proyectos "
+                    icon={
+                        <Work className={styles.container_buttons_nav_icons} />
+                    }
+                    name="Proyectos"
                 />
             </div>
             <div className={styles.container_buttons_nav}>
                 <ButtomCustom
-                    icon={<Email style={{ height: "20px", width: "20px" }} />}
+                    icon={
+                        <Email className={styles.container_buttons_nav_icons} />
+                    }
                     name="Contáctame"
                 />
             </div>

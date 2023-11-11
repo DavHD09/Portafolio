@@ -29,6 +29,7 @@
         flex-direction: column;
         gap: 20px;
         top: calc(50% - 78px);
+        z-index: 1;
     }
 
     &_icon-down {

@@ -1,0 +1,11 @@
+@import "../../../assets/styles/variables.style.module.scss";
+
+.container {
+    text-align: center;
+    padding: 0 5%;
+
+    &_title {
+        margin: 40px 0 !important;
+        color: $white;
+    }
+}
