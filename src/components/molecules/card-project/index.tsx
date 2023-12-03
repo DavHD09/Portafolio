@@ -25,7 +25,7 @@ export const CardProject = ({
                     className={styles[`container_description-tags`]}
                 >
                     {tags.map(({ img, name }: Tags) => (
-                        <TagItem img={img} name={name} />
+                        <TagItem img={img} name={name} key={name} />
                     ))}
                 </Grid>
             </div>
