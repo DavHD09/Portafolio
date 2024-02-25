@@ -7,6 +7,7 @@ import {
     ProjectsView,
 } from "./components/organisms";
 import { ButtonNavProvider } from "./context";
+import { Footer } from "./components/atoms/footer";
 
 export const App = (): JSX.Element => {
     return (
@@ -16,8 +17,7 @@ export const App = (): JSX.Element => {
                 <TechnologiesView />
                 <ProjectsView />
                 <ContactView />
-                {/* //TODO -> delete when complete the footer */}
-                <footer style={{ height: "100px" }} />
+                <Footer/>
             </ButtonNavProvider>
         </div>
     );

@@ -1,0 +1,21 @@
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 11px;
+    background-color: rgba(0, 0, 0, 0.34);
+
+    &_icon{
+        display: flex;
+        justify-content: end;
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+       width: 80%;
+    }
+}

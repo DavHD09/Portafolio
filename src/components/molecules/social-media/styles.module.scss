@@ -20,3 +20,63 @@
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .container_social {
+        &_logos {
+            height: 5vw;
+            width: 5vw;
+            margin-right: 2%;
+            cursor: pointer;
+    
+            &:hover {
+                scale: 1.1;
+                transition: linear 300ms;
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .container_social {
+        margin-bottom: 10%;
+        &_logos {
+            height: 8vw;
+            width: 8vw;
+            margin-right: 2%;
+            cursor: pointer;
+    
+            &:hover {
+                scale: 1.1;
+                transition: linear 300ms;
+            }
+        }
+    }
+    .img {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    .container_social {
+        margin-bottom: 10%;
+        &_logos {
+            height: 11vw;
+            width: 11vw;
+            margin-right: 2%;
+            cursor: pointer;
+    
+            &:hover {
+                scale: 1.1;
+                transition: linear 300ms;
+            }
+        }
+    }
+
+    .img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+}
