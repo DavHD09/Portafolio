@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Send } from "@mui/icons-material";
@@ -12,6 +12,8 @@ import { contactSchema } from "../../../schemas/contact.schema";
 import { ContactFormularyInputs } from "../../../models/contact-formulary.model";
 
 export const ContactFormulary = (): JSX.Element => {
+    const [loading, setLoading] = useState<boolean>(false)
+
     const {
         handleSubmit,
         control,
@@ -25,7 +27,8 @@ export const ContactFormulary = (): JSX.Element => {
         event: FormEvent<HTMLFormElement>
     ) => {
         const formValues = event.target as HTMLFormElement;
-        sendEmailMessage(formValues);
+        setLoading(true)
+        sendEmailMessage(formValues, setLoading);
     };
 
     return (
@@ -66,6 +69,7 @@ export const ContactFormulary = (): JSX.Element => {
                         icon={<Send />}
                         name="Enviar mensaje"
                         type="submit"
+                        disabled={loading}
                     />
                 </section>
             </form>
